@@ -1,0 +1,20 @@
+﻿namespace transportation
+{
+    partial class EmployeeEditForm
+    {
+        private System.ComponentModel.IContainer components = null; private System.Windows.Forms.Label lblFullName; private System.Windows.Forms.Label lblPosition; private System.Windows.Forms.Label lblPhone; private System.Windows.Forms.Label lblHireDate; private System.Windows.Forms.TextBox txtFullName; private System.Windows.Forms.TextBox txtPosition; private System.Windows.Forms.TextBox txtPhone; private System.Windows.Forms.DateTimePicker dtpHireDate; private System.Windows.Forms.CheckBox chkIsActive; private System.Windows.Forms.Button btnSave; private System.Windows.Forms.Button btnCancel;
+        protected override void Dispose(bool disposing) { if (disposing && (components != null)) components.Dispose(); base.Dispose(disposing); }
+        private void InitializeComponent()
+        {
+            this.lblFullName = new System.Windows.Forms.Label(); this.lblPosition = new System.Windows.Forms.Label(); this.lblPhone = new System.Windows.Forms.Label(); this.lblHireDate = new System.Windows.Forms.Label(); this.txtFullName = new System.Windows.Forms.TextBox(); this.txtPosition = new System.Windows.Forms.TextBox(); this.txtPhone = new System.Windows.Forms.TextBox(); this.dtpHireDate = new System.Windows.Forms.DateTimePicker(); this.chkIsActive = new System.Windows.Forms.CheckBox(); this.btnSave = new System.Windows.Forms.Button(); this.btnCancel = new System.Windows.Forms.Button(); this.SuspendLayout();
+            this.lblFullName.AutoSize = true; this.lblFullName.Location = new System.Drawing.Point(24, 24); this.lblFullName.Text = "ФИО"; this.txtFullName.Location = new System.Drawing.Point(27, 40); this.txtFullName.Size = new System.Drawing.Size(395, 20);
+            this.lblPosition.AutoSize = true; this.lblPosition.Location = new System.Drawing.Point(24, 73); this.lblPosition.Text = "Должность"; this.txtPosition.Location = new System.Drawing.Point(27, 89); this.txtPosition.Size = new System.Drawing.Size(395, 20);
+            this.lblPhone.AutoSize = true; this.lblPhone.Location = new System.Drawing.Point(24, 122); this.lblPhone.Text = "Телефон"; this.txtPhone.Location = new System.Drawing.Point(27, 138); this.txtPhone.Size = new System.Drawing.Size(395, 20);
+            this.lblHireDate.AutoSize = true; this.lblHireDate.Location = new System.Drawing.Point(24, 171); this.lblHireDate.Text = "Дата приёма"; this.dtpHireDate.Location = new System.Drawing.Point(27, 187); this.dtpHireDate.Size = new System.Drawing.Size(395, 20);
+            this.chkIsActive.AutoSize = true; this.chkIsActive.Location = new System.Drawing.Point(27, 224); this.chkIsActive.Text = "Активен";
+            this.btnSave.Location = new System.Drawing.Point(183, 264); this.btnSave.Size = new System.Drawing.Size(114, 32); this.btnSave.Text = "Сохранить"; this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnCancel.Location = new System.Drawing.Point(308, 264); this.btnCancel.Size = new System.Drawing.Size(114, 32); this.btnCancel.Text = "Отмена"; this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F); this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font; this.ClientSize = new System.Drawing.Size(454, 321); this.Controls.Add(this.btnCancel); this.Controls.Add(this.btnSave); this.Controls.Add(this.chkIsActive); this.Controls.Add(this.dtpHireDate); this.Controls.Add(this.txtPhone); this.Controls.Add(this.txtPosition); this.Controls.Add(this.txtFullName); this.Controls.Add(this.lblHireDate); this.Controls.Add(this.lblPhone); this.Controls.Add(this.lblPosition); this.Controls.Add(this.lblFullName); this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog; this.MaximizeBox = false; this.MinimizeBox = false; this.Name = "EmployeeEditForm"; this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent; this.Text = "Сотрудник"; this.Load += new System.EventHandler(this.EmployeeEditForm_Load); this.ResumeLayout(false); this.PerformLayout();
+        }
+    }
+}
